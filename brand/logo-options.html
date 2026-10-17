@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Woolly mark options</title>
+  <style>
+    :root {
+      --bg: #1b1916;
+      --sidebar: #141210;
+      --panel: #24201c;
+      --line: #3a322c;
+      --ink: #e8e0d4;
+      --muted: #9a8b7a;
+      --amber: #e0a15c;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Avenir Next", Avenir, "SF Pro Text", sans-serif;
+    }
+    main { max-width: 1080px; margin: 0 auto; padding: 36px 28px 64px; }
+    h1 { font-size: 22px; font-weight: 600; letter-spacing: -0.02em; margin: 0 0 8px; }
+    .lead { color: var(--muted); max-width: 66ch; line-height: 1.5; margin: 0 0 24px; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px 16px 18px;
+    }
+    h2 { font-size: 15px; font-weight: 600; margin: 0 0 4px; }
+    p { color: var(--muted); font-size: 13.5px; line-height: 1.45; margin: 0 0 14px; }
+    .side {
+      background: var(--sidebar);
+      border-radius: 6px;
+      padding: 14px 14px 12px;
+    }
+    .brand { display: flex; align-items: center; gap: 10px; min-height: 36px; }
+    .word { font-size: 18px; font-weight: 600; letter-spacing: -0.02em; line-height: 1; }
+    .sizes {
+      display: flex;
+      align-items: flex-end;
+      gap: 22px;
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+    }
+    .sizes div { text-align: center; }
+    .sizes span { display: block; margin-top: 6px; color: var(--muted); font-size: 11px; }
+  </style>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="tusk" viewBox="0 0 64 64">
+      <rect width="64" height="64" rx="14" fill="#e0a15c"/>
+      <path fill="#141210" d="M26 52C22 36 26 22 46 12C38 22 38 38 42 52Z"/>
+    </symbol>
+    <symbol id="pair" viewBox="16 8 64 48">
+      <path fill="#e0a15c" d="M42 52C46 36 42 22 22 12C30 22 30 38 26 52Z"/>
+      <path fill="#e0a15c" d="M54 52C50 36 54 22 74 12C66 22 66 38 70 52Z"/>
+    </symbol>
+    <symbol id="sweep" viewBox="-2 -8 82 68">
+      <rect x="2" y="32" width="54" height="20" rx="6" fill="#e8e0d4"/>
+      <path fill="#e0a15c" d="M34 36C28 20 34 8 56 2C48 12 44 24 50 36Z"/>
+    </symbol>
+    <symbol id="wool" viewBox="0 0 64 64">
+      <rect width="64" height="64" rx="14" fill="#e0a15c"/>
+      <path fill="none" stroke="#141210" stroke-width="5.25" stroke-linecap="round" stroke-linejoin="round" d="M15 20C9 34 16 46 25 50L32 29L39 50C48 46 55 34 49 20"/>
+    </symbol>
+  </svg>
+
+  <main>
+    <h1>Four marks</h1>
+    <p class="lead">Each one is shown the way it would sit at the top of the sidebar, on the same near-black brown. Amber is the only accent.</p>
+    <div class="grid">
+      <article>
+        <h2>1 · Tusk</h2>
+        <p>One horn cut out of an amber tile. This is the wallet-app shape: simple enough to read at 16 pixels, and a tusk rather than a letter.</p>
+        <div class="side">
+          <div class="brand">
+            <svg width="32" height="32"><use href="#tusk"/></svg>
+            <span class="word">Woolly</span>
+          </div>
+        </div>
+        <div class="sizes">
+          <div><svg width="72" height="72"><use href="#tusk"/></svg><span>72</span></div>
+          <div><svg width="32" height="32"><use href="#tusk"/></svg><span>32</span></div>
+          <div><svg width="16" height="16"><use href="#tusk"/></svg><span>16</span></div>
+        </div>
+      </article>
+
+      <article>
+        <h2>2 · Pair</h2>
+        <p>The same horn, twice, with no tile. From the front this is the mammoth. It stays amber directly on the dark bar.</p>
+        <div class="side">
+          <div class="brand">
+            <svg width="40" height="32"><use href="#pair"/></svg>
+            <span class="word">Woolly</span>
+          </div>
+        </div>
+        <div class="sizes">
+          <div><svg width="96" height="72"><use href="#pair"/></svg><span>72</span></div>
+          <div><svg width="40" height="32"><use href="#pair"/></svg><span>32</span></div>
+          <div><svg width="20" height="16"><use href="#pair"/></svg><span>16</span></div>
+        </div>
+      </article>
+
+      <article>
+        <h2>3 · Sweep</h2>
+        <p>An ivory billfold, with the same tusk standing at its right edge. The wallet stays a wallet. The horn is the only animal part.</p>
+        <div class="side">
+          <div class="brand">
+            <svg width="46" height="32"><use href="#sweep"/></svg>
+            <span class="word">Woolly</span>
+          </div>
+        </div>
+        <div class="sizes">
+          <div><svg width="110" height="72"><use href="#sweep"/></svg><span>72</span></div>
+          <div><svg width="46" height="32"><use href="#sweep"/></svg><span>32</span></div>
+          <div><svg width="23" height="16"><use href="#sweep"/></svg><span>16</span></div>
+        </div>
+      </article>
+
+      <article>
+        <h2>4 · Wool</h2>
+        <p>A W in the amber tile. The outer strokes curve the way the tusks do. This is the payment monogram, and the least animal of the four.</p>
+        <div class="side">
+          <div class="brand">
+            <svg width="32" height="32"><use href="#wool"/></svg>
+            <span class="word">Woolly</span>
+          </div>
+        </div>
+        <div class="sizes">
+          <div><svg width="72" height="72"><use href="#wool"/></svg><span>72</span></div>
+          <div><svg width="32" height="32"><use href="#wool"/></svg><span>32</span></div>
+          <div><svg width="16" height="16"><use href="#wool"/></svg><span>16</span></div>
+        </div>
+      </article>
+    </div>
+  </main>
+</body>
+</html>

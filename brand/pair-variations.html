@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Pair, toward a W</title>
+  <style>
+    :root { --bg:#1b1916; --panel:#24201c; --line:#3a322c; --ink:#e8e0d4; --muted:#9a8b7a; }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--bg); color:var(--ink); font-family:"Avenir Next",Avenir,"SF Pro Text",sans-serif; }
+    main { max-width:980px; margin:0 auto; padding:32px 28px 72px; }
+    h1 { font-size:22px; font-weight:600; letter-spacing:-.02em; margin:0 0 8px; }
+    .lead { color:var(--muted); margin:0 0 18px; max-width:70ch; line-height:1.45; }
+    .grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+    article, .ref { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:14px 16px 16px; }
+    .refs { display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; margin-bottom:14px; }
+    h2 { font-size:15px; font-weight:600; margin:0 0 4px; }
+    p { color:var(--muted); font-size:13.5px; line-height:1.45; margin:0 0 12px; }
+    .stage { background:#141210; border-radius:6px; min-height:108px; display:flex; align-items:center; justify-content:center; }
+    .stage.light { background:#f3efe8; }
+    .sizes { display:flex; gap:16px; align-items:flex-end; margin-top:10px; }
+    .sizes span { display:block; margin-top:4px; color:var(--muted); font-size:11px; text-align:center; }
+  </style>
+</head>
+<body>
+  <svg width="0" height="0" aria-hidden="true">
+    <symbol id="pair" viewBox="16 8 64 48">
+      <path fill="#e0a15c" d="M42 52C46 36 42 22 22 12C30 22 30 38 26 52Z"/>
+      <path fill="#e0a15c" d="M54 52C50 36 54 22 74 12C66 22 66 38 70 52Z"/>
+    </symbol>
+    <!-- Two tusks overlap once, the way the Golden Arches overlap into a letter. Flipped, the silhouette is a W. -->
+    <symbol id="overlap" viewBox="0 0 120 80">
+      <path d="M16 10C26 38 34 60 44 72C52 50 60 32 68 18" fill="none" stroke="#e0a15c" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M104 10C94 38 86 60 76 72C68 50 60 32 52 18" fill="none" stroke="#e0a15c" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="cross" viewBox="0 0 120 80">
+      <path d="M22 14C18 36 28 56 42 70" fill="none" stroke="#e0a15c" stroke-width="18" stroke-linecap="round"/>
+      <path d="M98 14C102 36 92 56 78 70" fill="none" stroke="#e0a15c" stroke-width="18" stroke-linecap="round"/>
+      <path d="M42 70C52 48 58 34 70 16" fill="none" stroke="#c4843a" stroke-width="14" stroke-linecap="round"/>
+      <path d="M78 70C68 48 62 34 50 16" fill="none" stroke="#c4843a" stroke-width="14" stroke-linecap="round"/>
+    </symbol>
+  </svg>
+  <main>
+    <h1>The pair, overlapped into a W</h1>
+    <p class="lead">McDonald’s arches are two curves that overlap into a letter. Hurley’s brackets never cross, so they stay two marks. These keep the two tusks and cross them once, so the pair itself is the W.</p>
+    <div class="refs">
+      <div class="ref">
+        <h2>Pair now</h2>
+        <p>Two tusks, side by side, no cross.</p>
+        <div class="stage"><svg width="120" height="80"><use href="#pair"/></svg></div>
+      </div>
+      <div class="ref">
+        <h2>Hurley</h2>
+        <p>Two brackets. They do not cross.</p>
+        <div class="stage light"><img alt="Hurley" referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/7/73/Hurley_company_logo.png" style="width:150px"></div>
+      </div>
+      <div class="ref">
+        <h2>Golden Arches</h2>
+        <p>Two curves overlap into one letter.</p>
+        <div class="stage light"><img alt="McDonald's arches" referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/3/36/McDonald%27s_Golden_Arches.svg" style="height:72px"></div>
+      </div>
+    </div>
+    <div class="grid">
+      <article>
+        <h2>Overlap</h2>
+        <p>Two tusks, each bent through the middle and laid over its pair. Where the arches cross into an M, these cross into a W.</p>
+        <div class="stage"><svg width="150" height="96"><use href="#overlap"/></svg></div>
+        <div class="sizes">
+          <div><svg width="52" height="34"><use href="#overlap"/></svg><span>32</span></div>
+          <div><svg width="26" height="17"><use href="#overlap"/></svg><span>16</span></div>
+        </div>
+      </article>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Woolly next to existing marks</title>
+  <style>
+    :root { --bg:#1b1916; --panel:#24201c; --line:#3a322c; --ink:#e8e0d4; --muted:#9a8b7a; }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--bg); color:var(--ink); font-family:"Avenir Next",Avenir,"SF Pro Text",sans-serif; }
+    main { max-width:1100px; margin:0 auto; padding:32px 28px 72px; }
+    h1 { font-size:22px; font-weight:600; letter-spacing:-.02em; margin:0 0 6px; }
+    h2 { font-size:16px; font-weight:600; margin:28px 0 12px; }
+    .lead { color:var(--muted); margin:0; max-width:70ch; line-height:1.45; }
+    .row { display:grid; grid-template-columns: 168px 1fr; gap:14px; align-items:center; background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:14px 16px; margin:0 0 10px; }
+    .mark { width:168px; height:112px; display:flex; align-items:center; justify-content:center; background:#f3efe8; border-radius:6px; overflow:hidden; }
+    .mark.ours { background:#141210; outline:1px solid #e0a15c; }
+    .mark img, .mark svg { max-width:148px; max-height:96px; object-fit:contain; }
+    .who { font-weight:600; margin:0 0 4px; }
+    p { margin:0; color:var(--muted); font-size:13.5px; line-height:1.45; }
+  </style>
+</head>
+<body>
+  <svg width="0" height="0" aria-hidden="true">
+    <symbol id="wool" viewBox="0 0 64 64">
+      <rect width="64" height="64" rx="14" fill="#e0a15c"/>
+      <path fill="none" stroke="#141210" stroke-width="5.25" stroke-linecap="round" stroke-linejoin="round" d="M15 20C9 34 16 46 25 50L32 29L39 50C48 46 55 34 49 20"/>
+    </symbol>
+    <symbol id="pair" viewBox="16 8 64 48">
+      <path fill="#e0a15c" d="M42 52C46 36 42 22 22 12C30 22 30 38 26 52Z"/>
+      <path fill="#e0a15c" d="M54 52C50 36 54 22 74 12C66 22 66 38 70 52Z"/>
+    </symbol>
+  </svg>
+  <main>
+    <h1>Wool, next to existing marks</h1>
+    <p class="lead">The amber tile on the left is the Wool option. The others are marks already in use.</p>
+
+    <div class="row">
+      <div class="mark ours"><svg width="72" height="72"><use href="#wool"/></svg></div>
+      <div><p class="who">Wool</p><p>Dark W, curved outer legs, amber rounded tile.</p></div>
+    </div>
+    <div class="row">
+      <div class="mark"><img alt="TrueMoney" referrerpolicy="no-referrer" src="https://brandnewday.asia/wp-content/uploads/2018/06/True-Money-Wallet-Logo-Design-1536x1021.jpg"></div>
+      <div><p class="who">TrueMoney</p><p>Their icon is a W built from folding wallet segments, in red, yellow, and orange.</p></div>
+    </div>
+    <div class="row">
+      <div class="mark"><img alt="Google Wallet 2011" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:FilePath/Google_Wallet_logo_(2011).svg"></div>
+      <div><p class="who">Google Wallet, 2011</p><p>A W in blue, red, yellow, and green. Same idea: the letter is the wallet.</p></div>
+    </div>
+    <div class="row">
+      <div class="mark"><img alt="WordPress" referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/b/bf/WordPress_W_Mark.svg"></div>
+      <div><p class="who">WordPress</p><p>A W inside a circle, in blue. The letterform is calligraphic, and the container is a circle.</p></div>
+    </div>
+    <div class="row">
+      <div class="mark"><img alt="Woolworths" referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Woolworths_Ltd._logo_%282022%29.svg/500px-Woolworths_Ltd._logo_%282022%29.svg.png"></div>
+      <div><p class="who">Woolworths</p><p>The Australian supermarket. A green W made of looped apple shapes, with the word Woolworths under it.</p></div>
+    </div>
+
+    <h2 id="pair">Pair, next to existing marks</h2>
+    <div class="row">
+      <div class="mark ours"><svg width="96" height="72"><use href="#pair"/></svg></div>
+      <div><p class="who">Pair</p><p>Two tusks, no head, no letter, amber on the dark bar.</p></div>
+    </div>
+    <div class="row">
+      <div class="mark"><img alt="Hurley" referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/commons/7/73/Hurley_company_logo.png"></div>
+      <div><p class="who">Hurley</p><p>Two thick brackets, bowed outward, with a gap between them. That symbol is the H, and it is often used on its own.</p></div>
+    </div>
+    <div class="row">
+      <div class="mark"><img alt="Utah Mammoth" referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/UtahMammoth.svg/500px-UtahMammoth.svg.png"></div>
+      <div><p class="who">Utah Mammoth</p><p>A mammoth head in profile. One tusk curls forward. The crown is a mountain range.</p></div>
+    </div>
+    <div class="row">
+      <div class="mark"><img alt="Mastodon" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:FilePath/Mastodon_Logotype_(Simple).svg"></div>
+      <div><p class="who">Mastodon</p><p>The current mark is a lowercase m. It is not a pair of tusks.</p></div>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Pair with a peak</title>
+  <style>
+    :root { --bg:#1b1916; --panel:#24201c; --line:#3a322c; --ink:#e8e0d4; --muted:#9a8b7a; }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--bg); color:var(--ink); font-family:"Avenir Next",Avenir,"SF Pro Text",sans-serif; }
+    main { max-width:980px; margin:0 auto; padding:32px 28px 72px; }
+    h1 { font-size:22px; font-weight:600; letter-spacing:-.02em; margin:0 0 8px; }
+    .lead { color:var(--muted); margin:0 0 18px; max-width:68ch; line-height:1.45; }
+    .grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+    article, .ref { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:14px 16px 16px; }
+    .refs { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:14px; }
+    h2 { font-size:15px; font-weight:600; margin:0 0 4px; }
+    p { color:var(--muted); font-size:13.5px; line-height:1.45; margin:0 0 12px; }
+    .stage { background:#141210; border-radius:6px; min-height:120px; display:flex; align-items:center; justify-content:center; }
+    .stage.light { background:#0b1a33; }
+    .sizes { display:flex; gap:18px; align-items:flex-end; margin-top:12px; }
+    .sizes span { display:block; margin-top:4px; color:var(--muted); font-size:11px; text-align:center; }
+  </style>
+</head>
+<body>
+  <svg width="0" height="0" aria-hidden="true">
+    <symbol id="original" viewBox="16 8 64 48">
+      <path fill="#e0a15c" d="M42 52C46 36 42 22 22 12C30 22 30 38 26 52Z"/>
+      <path fill="#e0a15c" d="M54 52C50 36 54 22 74 12C66 22 66 38 70 52Z"/>
+    </symbol>
+    <symbol id="tusks" viewBox="8 0 88 56">
+      <path fill="#e0a15c" d="M32 52C36 36 32 22 12 12C20 22 20 38 16 52Z"/>
+      <path fill="#e0a15c" d="M64 52C60 36 64 22 84 12C76 22 76 38 80 52Z"/>
+    </symbol>
+    <symbol id="peak" viewBox="8 0 88 56">
+      <path fill="#e0a15c" d="M32 52C36 36 32 22 12 12C20 22 20 38 16 52Z"/>
+      <path fill="#e0a15c" d="M64 52C60 36 64 22 84 12C76 22 76 38 80 52Z"/>
+      <path fill="#e8e0d4" d="M48 4 L36 28 L48 22 Z"/>
+      <path fill="#c4843a" d="M48 4 L60 28 L48 22 Z"/>
+    </symbol>
+    <symbol id="diamond" viewBox="16 8 64 48">
+      <path fill="#e0a15c" d="M42 52C46 36 42 22 22 12C30 22 30 38 26 52Z"/>
+      <path fill="#e0a15c" d="M54 52C50 36 54 22 74 12C66 22 66 38 70 52Z"/>
+      <path fill="#e8e0d4" d="M48 16 L41 26 L48 38 Z"/>
+      <path fill="#c4843a" d="M48 16 L55 26 L48 38 Z"/>
+    </symbol>
+  </svg>
+  <main>
+    <h1>A peak between the tusks</h1>
+    <p class="lead">The Nuggets crest puts a cut mountain in the space between two tools. Here that peak sits in the gap of the pair. The pickaxes, the ball, and the round badge stay theirs.</p>
+    <div class="refs">
+      <div class="ref">
+        <h2>Pair</h2>
+        <p>Two tusks. The middle is empty, which is why it reads like Hurley.</p>
+        <div class="stage"><svg width="140" height="92"><use href="#original"/></svg></div>
+      </div>
+      <div class="ref">
+        <h2>Nuggets</h2>
+        <p>A two-facet peak, light on one face and gold on the other, set in the gap.</p>
+        <div class="stage light"><img alt="Denver Nuggets" referrerpolicy="no-referrer" src="https://upload.wikimedia.org/wikipedia/en/7/76/Denver_Nuggets.svg" style="height:108px"></div>
+      </div>
+    </div>
+    <div class="grid">
+      <article>
+        <h2>1 · Peak</h2>
+        <p>The mountain sits high, between the tips, the way the Nuggets peak sits above the crossed tools. Ivory on the left face, a deeper amber on the right.</p>
+        <div class="stage"><svg width="160" height="104"><use href="#peak"/></svg></div>
+        <div class="sizes">
+          <div><svg width="48" height="32"><use href="#peak"/></svg><span>32</span></div>
+          <div><svg width="24" height="16"><use href="#peak"/></svg><span>16</span></div>
+        </div>
+      </article>
+      <article>
+        <h2>2 · Diamond</h2>
+        <p>The same cut, closed into a diamond and dropped into the gap. It stays lower than the tusk tips, so it can read as the middle of a W.</p>
+        <div class="stage"><svg width="160" height="104"><use href="#diamond"/></svg></div>
+        <div class="sizes">
+          <div><svg width="48" height="32"><use href="#diamond"/></svg><span>32</span></div>
+          <div><svg width="24" height="16"><use href="#diamond"/></svg><span>16</span></div>
+        </div>
+      </article>
+    </div>
+  </main>
+</body>
+</html>
