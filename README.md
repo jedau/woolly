@@ -8,6 +8,10 @@ A client has many workers. A worker has many projects. The client adds work and 
 
 The people in the demo are fictional: Cool Client (client), Worker One (worker), and Worker Dos (worker).
 
+## Demo
+
+Walkthrough of the client board, task allocation, Manage, and the worker account: https://youtu.be/IX1FJzK4vcU
+
 ## Look
 
 Dark brown, flat, closer to a Darcula editor than a paper form. Near-black background, warm brown panels, amber marks for the current selection and the primary button. Green means credited. Red means disputed.
